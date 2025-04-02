@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: red;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: red;
+}
+
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: red;
+    font-size: 50px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+/* estilo titulos */
+
+section.titulos{
+    padding: 80px 4%;
+}
+
+section.titulos .flex{
+    gap: 60px;
+}
+
+.titulos .titulos-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+}
+
+.titulos .titulos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+}
+
+.titulos .titulos-box i{
+    font-size: 70px;
+    color: red;
+}
+
+.titulos .titulos-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* estilo midia sociai9s */
+
+section.midias{
+    padding: 40px 4%;
+}
+section.midias .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.midias .txt-midias{
+    color: #fff;
+}
+
+.midias .txt-midias h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.midias .txt-midias h2 span{
+    color: red;
+    display: block;
+}
+
+.midias .txt-midias p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.midias .txt-midias .btn-midias button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* estilo LOJA */
+
+section.loja{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.loja .flex{
+    gap: 80px;
+}
+
+.img-loja{
+    width: 360px;
+    height: 460px;
+    background-color: red;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.img-loja {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra */
+}
+
+.img-loja:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra quando o mouse passa por cima */
+}
