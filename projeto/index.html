@@ -22,15 +22,15 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Titulos</a></li>
-                    <li><a href="#">Midias Sociais</a></li>
-                    <li><a href="#">Loja</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#titulos">Titulos</a></li>
+                    <li><a href="#midias sociais">Midias Sociais</a></li>
+                    <li><a href="#loja">Loja</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#formulario">
                     <button>Duvidas</button>
                 </a>
             </div>
@@ -38,7 +38,7 @@
     </header>
 
     <main> 
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="inicio">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -46,7 +46,7 @@
                         <p>O São Paulo Futebol Clube, um gigante do futebol brasileiro, abre suas portas para você. Aqui, a paixão pelo esporte se encontra com a história gloriosa de um clube que transcende gerações.</p>
     
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#" id="link-socio-torcedor">
                                 <button>Seja Socio Torcedor</button>
                             </a>
                         </div>
@@ -60,8 +60,8 @@
                 
             </div>
         </section>
-
-        <section class="titulos"> 
+        <script src="socio.js"></script>
+        <section class="titulos" id="titulos"> 
             <div class="interface">
                 <h2 class="titulo">Principais <span>Titulos</span></h2>
                 <div class="flex">
@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <section class="midias">
+        <section class="midias" id="midias sociais">
             <div class="interface">
                 ><div class="flex">
                     <div class="img-midias">
@@ -108,7 +108,7 @@
 
         </section>
 
-        <section class="loja">
+        <section class="loja" id="loja">
             <div class="interface">
                 <h2 class="titulo">SAO <span> STORE</span></h2>
                 <div class="flex">
@@ -119,6 +119,43 @@
             </div>
         </section>
         <script src="script.js"></script>
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">TIRE SUAS <span>DUVIDAS.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome:" required>
+                    <input type="text" name="" id="" placeholder="Seu email:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div>
+        </section>
+        <script src="formulario.js"></script>
     </main>
+
+    <footer> 
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo1.png" alt="Logo SPFC">
+                    </div>
+                    <div class="btn-midias">
+                        <a href="https://www.instagram.com/saopaulofc/"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.youtube.com/spfctv"><button><i class="bi bi-youtube"></i></button></a>
+                        <a href="https://x.com/SaoPauloFC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><button><i class="bi bi-twitter-x"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope"></i> <a href="mailto:fragaleo2002@gmail.com">fragaleo2002@gmail.com</a></p>
+                
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

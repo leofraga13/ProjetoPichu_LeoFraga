@@ -167,7 +167,7 @@ section.midias .flex{
     text-align: justify;
 }
 
-.midias .txt-midias .btn-midias button{
+.btn-midias button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -204,4 +204,157 @@ section.loja .flex{
 
 .img-loja:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra quando o mouse passa por cima */
+}
+
+/* estilo fORMULARIO */
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    text-align:center ;
+    background-color: red;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* estilo do rodape */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid red;
+}
+
+footer .line-footer p i{
+    color: red;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+    /* classes gerais */
+    .flex{
+        flex-direction: column;
+    }
+
+    .menu-desktop{
+        display: none;
+        width: 100%;
+        text-align: center; 
+        margin-bottom: 10px; 
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+    
+
+    /* topo do site */
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+    /* midias */
+
+    .midias .txt-midias h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-midias{
+        text-align: center;
+    }
+
+    .img-midias img{
+        width: 100%;
+
+    }
+
+    /* loja */
+
+    section.loja{
+        padding: 80px 8%;
+    }
+
+    .img-loja{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.loja .flex{
+        gap: 60px;
+    }
+
+    /* rodape */
+
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
 }
